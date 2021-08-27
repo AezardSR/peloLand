@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), no-repeat center 100% url(../image/bg.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titre{
+    text-align: center; 
+}
+
+#titre h1{
+    font-size: 80px;
+}
