@@ -7,14 +7,21 @@ body{
     color: white;
     font-size: 25px;
 }
-header{
+#hdr{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), no-repeat center 100% url(../image/bg.png);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.img-1{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), no-repeat center 100% url(../image/bg.png);
+}
+
+.img-2{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), no-repeat center 100% url(../image/bg2.jpg);
 }
 
 #titre{
