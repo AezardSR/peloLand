@@ -41,12 +41,23 @@ h1,h2{
 }
 
 /*-----------------------barnav----------------------*/
-#menu-button{
+#barnav{
+    position: absolute;
     width: 100%;
     height: 100vh;
+}
+#menuBurger {
+    display: none;
+    width: 50px;
+    z-index: 15;
+    position: absolute;
+}
+#menu-button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    position: absolute;
     z-index: 10;
 }
 
@@ -65,12 +76,32 @@ a:hover{
     transition: background-color 0.2s linear;
 }
 
-.testDiv a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    width: 100%;
-    height: 100%;
+/*-----responsive navbar------*/
+@media screen and (max-width:1024px) {
+    #menu-button{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    #menuBurger{
+        display: unset;
+        z-index: 15;
+    }
+    .closeMenu{
+        bottom: 10%;
+        transform: translate(0, -125%);
+        transition: all 0.5s ease-in-out;
+    }
+    .closeMenu a {
+    }
+    .openMenu{
+        transform: translate(0,0);
+        transition: all 0.5s ease-in-out;
+        
+    }
+    .openMenu a {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 /*--------------gestion de la scrollbar--------------------*/
