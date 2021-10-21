@@ -47,10 +47,22 @@ h1,h2{
     height: 100vh;
 }
 #menuBurger {
-    display: none;
+    
+}
+#closeBurger{
+    
+}
+.iconB{
+    margin-left: 10px;
     width: 50px;
     z-index: 15;
     position: absolute;
+}
+.iconBDisplayUp{
+    display: none;
+}
+.iconBDisplayNone{
+    display: none;
 }
 #menu-button{
     position: absolute;
@@ -83,8 +95,13 @@ a:hover{
         grid-template-rows: repeat(4,1fr);
     }
     #menuBurger{
-        display: unset;
         z-index: 15;
+    }
+    .iconBDisplayUp{
+        display: unset;
+    }
+    .iconBDisplayNone{
+        display: none;
     }
     .closeMenu{
         bottom: 10%;
