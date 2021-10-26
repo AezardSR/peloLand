@@ -1,10 +1,11 @@
+/*---------------gestion opacit" du titre au survol de la nav-------------*/
 let a = document.getElementById("menu-button");
 let hdr = document.getElementById("titre");
 a.onmouseover = function() {
-    hdr.classList.add("titreOpa");
+    hdr.classList.toggle("titreOpaDown");
 }
 a.onmouseout = function() {
-    hdr.classList.remove("titreOpa");
+    hdr.classList.toggle("titreOpaDown");
 }
 
 /*------------menu burger---------------*/

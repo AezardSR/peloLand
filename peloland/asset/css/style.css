@@ -27,6 +27,7 @@ body{
 
 #titre{
     text-align: center; 
+    transition: opacity 0.3s linear;
 }
 
 #titre h1{
@@ -36,8 +37,10 @@ h1,h2{
     opacity: 1;
     transition: opacity 0.2s linear;
 }
-.titreOpa{
-    opacity: 0.2;
+
+.titreOpaDown{
+    opacity: 0;
+    transition: opacity 0.3s linear;
 }
 
 /*-----------------------barnav----------------------*/
